@@ -1,0 +1,31 @@
+{
+"manifest_version":3,
+"name": "Ghosty Extension",
+"description":"Basic Level Extension",
+"version":"1.0",
+"permissions": [ "input", "alarms", "tabs", "notifications", "cookies", "storage" ],
+"background":{
+    "service_worker":"background.js"
+},
+"content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "file://*/*"],
+      "css": ["content/content.css"],
+      "js": ["content/content.js"]
+    }
+  ],
+
+"action":{
+"default_popup":"common/hello.html",
+"default_icon":"images/icon.png"
+
+},
+"web_accessible_resources": [
+  {
+    "resources": [ "images/icon.png" ],
+    "matches": ["http://*/*", "https://*/*", "file://*/*"],
+    "use_dynamic_url": true
+  } 
+]
+
+}
