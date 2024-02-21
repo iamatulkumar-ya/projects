@@ -1,0 +1,600 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Start:  Variable Section */
+:root {
+  /* --theme-color: purple; */
+  --appHeaderBGColor: #21232b;
+  --appFooterBackToTopBGColor: #373c47;
+  --appFooterBGColor: #282c34;
+  --appFooterCopyRightsBGColor: #21232b;
+  --appFooterTextColor: #d9d9d9;
+  --appLogoTextColor: #f7941d;
+  --appLogoTagLineColor: #bf1e2e;
+  --appMenuBGColor: rgba(233, 233, 233);
+  --appMenuActiveBGColor: rgb(207, 207, 207);
+  /* --contentHeadingColor: gray; */
+  --contentHeadingColor: #335aa2;
+  --contentHeadingColor: #0b4e92;
+  --contentTextColor: #282c34;
+  --alertColor: red;
+  --commonBorderColor: lightgrey;
+}
+
+body {
+  margin: 0;
+  font-family: -"Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+/* End:  Variable Section */
+
+/* Default */
+
+:host {
+  font-family: -"Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  padding: 3px !important;
+  /* border: 1px solid red; */
+}
+
+.content-width {
+  width: 95% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-width-override {
+  background: hotpink;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: fit-content;
+
+  z-index: -1;
+}
+
+.row {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.ulText {
+  text-decoration: underline;
+}
+
+.fw200 {
+  font-weight: 200 !important;
+}
+
+.fw350 {
+  font-weight: 350 !important;
+}
+
+.fw300 {
+  font-weight: 300 !important;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.col-md-11,
+.col-md-10,
+.col-md-9,
+.col-md-8,
+.col-md-7,
+.col-md-6,
+.col-md-5,
+.col-md-4,
+.col-md-3,
+.col-md-2,
+.col-md-1 {
+  padding: 0px !important;
+}
+
+.pd0 {
+  padding: 0px !important;
+}
+
+.pdTop1rem {
+  padding-top: 1rem !important;
+}
+
+.pdBottom1rem {
+  padding-bottom: 1rem !important;
+}
+
+.pdLeft1rem {
+  padding-left: 1rem !important;
+}
+
+.pdRight1rem {
+  padding-right: 1rem !important;
+}
+
+.pdTopBottom1rem {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin-bottom: 0.5rem !important;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.ContentHeading {
+  color: var(--contentHeadingColor);
+  font-weight: 600;
+}
+
+.ContentText {
+  color: var(--contentTextColor);
+  font-size: 21px;
+}
+
+.textCenter {
+  text-align: center !important;
+}
+
+.textLeft {
+  text-align: left !important;
+}
+
+.textRight {
+  text-align: right !important;
+}
+.textJustify {
+  text-align: justify !important;
+}
+
+/* Start:  App Component Section */
+
+/* End:  App Component Section  */
+/*##################################################################################################################################  */
+
+/* Start:  App Header Page Section */
+
+.AppHeader {
+  background-color: var(--appHeaderBGColor);
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.AppAssistanceDiv {
+  color: var(--appFooterTextColor);
+  text-align: right;
+  padding-right: 0.5rem;
+  font-size: 13px;
+}
+
+.AppLogoDiv .AppLogo {
+  width: 25%;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+.AppSignInDiv {
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+.AppSignInDiv a {
+  cursor: pointer;
+  color: var(--appLogoTextColor) !important;
+}
+
+.AppSignInDiv a:hover {
+  cursor: pointer;
+  color: var(--appLogoTextColor) !important;
+  text-decoration: underline !important;
+}
+
+.AppSignInDiv span { 
+  color: white;
+}
+
+/* End:  App Header Page Section  */
+/*##################################################################################################################################  */
+
+/* Start:  App Footer Page Section */
+
+.AppFooter {
+  font-size: 15px;
+  background-color: var(--appFooterBGColor);
+  color: var(--appFooterTextColor);
+  padding: 2.5rem 0rem 2.5rem 0rem; /* top left bottom right*/
+}
+
+.AppFooter p {
+  font-size: 17px;
+  /* text-decoration: underline; */
+  font-weight: bold;
+}
+
+.AppFooter ul {
+  list-style: none;
+}
+
+.AppFooter ul li a {
+  color: var(--appFooterTextColor) !important;
+}
+.AppFooter ul li a:hover {
+  text-decoration: underline !important;
+}
+
+.AppFooterCopyRights,
+.AppFooterBackToTop {
+  background-color: var(--appFooterCopyRightsBGColor);
+  color: var(--appFooterTextColor);
+  font-size: 13px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.AppFooterCopyRights > span,
+.AppFooterBackToTop > .BackToTopDiv {
+  width: 100%;
+  text-align: center;
+}
+
+.AppFooterBackToTop span {
+  cursor: pointer;
+}
+
+.AppFooterBackToTop {
+  background-color: var(--appFooterBackToTopBGColor);
+}
+
+/* End:  App Footer Page Section  */
+/*##################################################################################################################################  */
+
+/* Start:  App Menu Section */
+
+.AppMenu {
+  /* background-color: var(--appMenuBGColor); */
+  background-color: var(--appFooterBGColor);
+}
+
+.AppMenuContent {
+  text-align: center;
+}
+
+.AppMenuContent ul {
+  list-style: none;
+  /* display: inline-flex; */
+}
+
+.AppMenuContent ul li {
+  text-align: center;
+  display: inline;
+}
+
+.AppMenuContent ul li a {
+  color: white;
+  display: inline-block;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  align-items: center;
+  width: 8rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.AppMenuContent ul li a:hover {
+  background-color: var(--appHeaderBGColor);
+  background-color: var(--appFooterBackToTopBGColor);
+}
+
+.AppMenuLinkActive {
+  background-color: var(--appHeaderBGColor);
+  background-color: var(--appFooterBackToTopBGColor);
+}
+
+.StickAppMenu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-right: auto;
+  z-index: 115003;
+  padding-top: 0rem !important;
+  /* border-bottom: none; */
+}
+
+/* End:  App Menu Section  */
+/*##################################################################################################################################  */
+
+/* Start:  App Page Content Section - Home Page  */
+
+.AppPageContentContainer {
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+}
+
+.ResultSection {
+  /* border: 1px solid red; */
+}
+
+.ResultCard {
+  border-radius: 10px;
+  border: 1px solid var(--commonBorderColor);
+  display: inline-block;
+  padding: 1rem 2rem 1rem 2rem;
+  text-align: center justify;
+}
+
+.StudentImageContainer {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.StudentImage {
+  z-index: 1;
+
+  border: 1px solid var(--contentHeadingColor);
+  border-bottom: none;
+  border-top-left-radius: 25px;
+}
+
+.CourseName {
+  /* position: absolute; */
+  /* top: 195px; */
+  /*  same as the image size of student */
+
+  height: 40px !important;
+  border: 1px solid var(--contentHeadingColor);
+  border-bottom-right-radius: 25px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  /*margin-top: -40px !important; */
+  z-index: 9999 !important;
+  background-color: var(--contentHeadingColor);
+}
+
+.AnnouncementContainer,
+.NewsAndEventContainer {
+  height: 400px;
+  padding: 2rem;
+  border: 1px solid var(--commonBorderColor);
+  border-radius: 10px;
+}
+
+.HomePageAboutUsCard {
+  /* height: 400px; */
+  padding: 2rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.HomePageAboutUsCard:first-child {
+  padding-left: 0 !important;
+}
+
+.HomePageAboutUsCard:last-child {
+  padding-right: 0 !important;
+}
+
+.HomePageAboutUsCard h4 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  border-top: 1px solid var(--commonBorderColor);
+}
+
+/* End:  App Page Content Section - Home Page   */
+/*##################################################################################################################################  */
+
+/* Form Page */
+/* [ngClass]="_i%2===0? 'formEvenField' : 'formOddField'" */
+.formEvenField {
+  background-color: rgb(238, 238, 238);
+  background-color: white;
+}
+
+.formOddField {
+  background-color: rgb(219, 217, 217);
+  background-color: white;
+}
+
+.formInfo-div {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(219, 217, 217);
+}
+
+.formInfo-div > ul {
+  margin-left: 2rem !important;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+input.ng-touched.ng-invalid {
+  border: 1px solid red !important;
+}
+
+.formContainer {
+  background-color: rgb(248, 248, 248) !important;
+  /* box-shadow: 1px 1px 4px 1px rgb(184, 184, 184); */
+  box-shadow: 1px 1px 4px 1px var(--appMenuActiveBGColor) ;
+}
+
+.formControlContainer {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem !important; /* top left bottom right*/
+}
+
+.formLabel-div {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.formControl-tb-t,
+.formControl-tb-c,
+.formControl-ta,
+.formControl-dd {
+  display: block;
+  width: 100%;
+  padding: 0.375rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  height: 2.8rem;
+}
+
+/* for radio button */
+.formControl-tb-r {
+}
+
+/* for calendar button */
+.formControl-tb-c {
+}
+
+.formControl-ta {
+  height: 7rem;
+}
+
+@keyframes alert-Animation {
+  0% {
+    margin-top: -1rem;
+  }
+
+  100% {
+    margin-top: 0rem;
+  }
+}
+
+.formRequiredIcon {
+  color: var(--alertColor);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* .formControl-alertContainer {
+  overflow: hidden !important;
+} */
+.formControl-alert {
+  color: var(--alertColor);
+  width: 100%;
+  font-size: 1rem;
+  border: none !important;
+  animation-name: alert-Animation;
+  animation-duration: 1s;
+}
+
+/* .formButton {
+  font-size: 1.1rem;
+   padding: 0.5em 5em 0.5em 5em !important;  
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} */
+
+.errorMessage{
+  color:red;
+}
+
+
+/* Start:  Admin Menu Section */
+
+.AdminMenu { 
+  background-color: transparent ;
+}
+
+.AdminMenuContent {
+  text-align: center;
+}
+
+.AdminMenuContent ul {
+  list-style: disc;
+  color:  var(--contentHeadingColor);  
+}
+
+.AdminMenuContent ul li {
+  text-align: left; 
+}
+
+.AdminMenuContent ul li a {
+  color:  var(--contentHeadingColor); 
+  display: inline-block;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  align-items: center;
+    width: 100%;
+  font-size: 1.1rem;
+  font-weight: 200; 
+  border-bottom:1px solid  var(--appMenuActiveBGColor);
+}
+
+.AdminMenuContent ul li a:hover { 
+  font-weight: 500;
+}
+
+.AdminMenuLinkActive { 
+  font-weight: 500;
+}
+
+.StickAdminMenu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-right: auto;
+  z-index: 115003;
+  padding-top: 0rem !important; 
+}
+
+.adminContentContainer{
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+  border-left:1px solid  var(--appMenuActiveBGColor); 
+  box-shadow: 1px 1px 4px 1px var(--appMenuActiveBGColor) ;
+}
+
+/* Start:  Admin Menu Section */
+
+/*##################################################################################################################################  */
+
+/*Media Query*/
+
+@media screen and (min-width: 740px) {
+  .content-width {
+    width: 95% !important;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .content-width {
+    max-width: 1260px !important;
+  }
+}
