@@ -1,0 +1,6 @@
+requests==2.31.0
+Flask==2.2.5
+numpy==1.21.6
+pandas==1.1.5
+python-dotenv==0.21.1
+rsa==4.9

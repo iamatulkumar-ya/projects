@@ -1,0 +1,33 @@
+<div>
+    <div class="AppHeader">  
+
+        <div class="AppAssistanceDiv">
+           <span>    </span>
+        </div>
+
+        <div class="AppLogoDiv content-width" style="text-align: center;">
+            <br/>
+            <h1 style="color: white;">NG-DEMO-APP </h1>
+        </div>
+
+        <div class="AppSignInDiv"  >
+            <span   *ngIf="showLogoutButton; else showLoginContent" >
+
+              {{greetingMessage+' '}} <strong>  {{loginUserDetails?.userName}} </strong>
+              &nbsp;
+              <a  (click)="LogMeOut()"> Logout</a>
+            </span> 
+
+            <ng-template #showLoginContent > 
+                <a routerLink="Login"> Member Login</a>
+            </ng-template>
+        
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
